@@ -17,7 +17,22 @@ Amazon Q로 만든 지뢰 찾기 게임입니다.
 
 ## 설치 및 실행 방법
 
-### 방법 1: 가상환경 사용 (권장)
+### 방법 1: 자동 설치 스크립트 사용 (가장 쉬운 방법)
+```bash
+# 1. 저장소 복제
+git clone https://github.com/hyeongirlife/minesweeper-game.git
+cd minesweeper-game
+
+# 2. 실행 스크립트 실행
+# Windows
+run_game.bat
+
+# macOS/Linux
+./run_game.sh
+```
+이 스크립트는 자동으로 가상환경을 생성하고, 필요한 패키지를 설치한 후 게임을 실행합니다.
+
+### 방법 2: 가상환경 수동 설정
 ```bash
 # 1. 저장소 복제
 git clone https://github.com/hyeongirlife/minesweeper-game.git
@@ -43,7 +58,7 @@ python minesweeper.py
 python3 minesweeper.py
 ```
 
-### 방법 2: 직접 설치
+### 방법 3: 직접 설치
 ```bash
 # 1. 저장소 복제
 git clone https://github.com/hyeongirlife/minesweeper-game.git
@@ -64,26 +79,12 @@ python minesweeper.py
 python3 minesweeper.py
 ```
 
-### 방법 3: 다운로드 없이 실행 (Python과 pip이 이미 설치된 경우)
-```bash
-# 1. pygame 설치
-# Windows
-pip install pygame
-
-# macOS/Linux
-pip3 install pygame
-
-# 2. 저장소에서 파일 다운로드
-# GitHub에서 "Code" 버튼 > "Download ZIP" 클릭 > 압축 해제
-
-# 3. 게임 실행
-# 압축 해제한 폴더로 이동 후:
-# Windows
-python minesweeper.py
-
-# macOS/Linux
-python3 minesweeper.py
-```
+### 방법 4: ZIP 다운로드 (Git 없이)
+1. GitHub 페이지에서 "Code" 버튼 클릭 > "Download ZIP" 선택
+2. 다운로드한 ZIP 파일 압축 해제
+3. 압축 해제한 폴더에서:
+   - Windows: `run_game.bat` 실행
+   - macOS/Linux: 터미널에서 `chmod +x run_game.sh && ./run_game.sh` 실행
 
 ## 게임 조작법
 - 메인 페이지에서 "게임 시작" 버튼 클릭: 게임 시작
