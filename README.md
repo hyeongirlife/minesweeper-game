@@ -15,16 +15,75 @@ Amazon Q로 만든 지뢰 찾기 게임입니다.
 ![게임 화면](screenshots/game_screen.png)
 ![폭발 효과](screenshots/explosion.png)
 
-## 설치 방법
-1. Python 3.x 설치
-2. 필요한 패키지 설치:
-   ```
-   pip install pygame
-   ```
-3. 게임 실행:
-   ```
-   python minesweeper.py
-   ```
+## 설치 및 실행 방법
+
+### 방법 1: 가상환경 사용 (권장)
+```bash
+# 1. 저장소 복제
+git clone https://github.com/hyeongirlife/minesweeper-game.git
+cd minesweeper-game
+
+# 2. 가상환경 생성 및 활성화
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# 3. 필요한 패키지 설치
+pip install -r requirements.txt
+
+# 4. 게임 실행
+# Windows
+python minesweeper.py
+
+# macOS/Linux
+python3 minesweeper.py
+```
+
+### 방법 2: 직접 설치
+```bash
+# 1. 저장소 복제
+git clone https://github.com/hyeongirlife/minesweeper-game.git
+cd minesweeper-game
+
+# 2. 필요한 패키지 설치
+# Windows
+pip install pygame
+
+# macOS/Linux
+pip3 install pygame
+
+# 3. 게임 실행
+# Windows
+python minesweeper.py
+
+# macOS/Linux
+python3 minesweeper.py
+```
+
+### 방법 3: 다운로드 없이 실행 (Python과 pip이 이미 설치된 경우)
+```bash
+# 1. pygame 설치
+# Windows
+pip install pygame
+
+# macOS/Linux
+pip3 install pygame
+
+# 2. 저장소에서 파일 다운로드
+# GitHub에서 "Code" 버튼 > "Download ZIP" 클릭 > 압축 해제
+
+# 3. 게임 실행
+# 압축 해제한 폴더로 이동 후:
+# Windows
+python minesweeper.py
+
+# macOS/Linux
+python3 minesweeper.py
+```
 
 ## 게임 조작법
 - 메인 페이지에서 "게임 시작" 버튼 클릭: 게임 시작
@@ -37,6 +96,12 @@ Amazon Q로 만든 지뢰 찾기 게임입니다.
 - 초급: 9x9 격자, 10개 지뢰
 - 중급: 16x16 격자, 40개 지뢰
 - 고급: 30x16 격자, 99개 지뢰
+
+## 문제 해결
+- **pygame 설치 오류**: 시스템에 따라 추가 종속성이 필요할 수 있습니다.
+  - Ubuntu/Debian: `sudo apt-get install python3-pygame`
+  - macOS: `brew install sdl sdl_image sdl_mixer sdl_ttf portmidi`
+- **한글 표시 문제**: 시스템에 한글 폰트가 없는 경우 영문으로 표시될 수 있습니다.
 
 ## 제작자
 - 현걸 (hyeongirlife)
